@@ -11,12 +11,14 @@ export default function TextForm(props) {
     //Correct Way to change the state is - setText("Please provide Input")
 
     const handleUpperCaseClick = ()=>{
-        console.log("UpperCase was Clicked")
-        setText ("You have clicked the handelUpperCase !");
+        console.log("UpperCase was Clicked -> " + Text)
+        let newText = Text.toUpperCase();
+        setText (newText);
     }
 
-    const handleOnChange = ()=>{
+    const handleOnChange = (event) => {
         console.log("On change")
+        setText(event.target.value)
     }
     
 
