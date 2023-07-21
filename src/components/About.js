@@ -28,7 +28,7 @@ export default function About() {
                 borderRadius: '10px'
             }
             )
-            setbtnText("Enable Dark Mode")
+            setbtnText("Enable Dark Mode !")
         }   
     }
     
@@ -80,7 +80,8 @@ export default function About() {
                 </div>
     </div>
         <div className='container my-3'>
-                <button type='button' className='btn btn-primary' onClick={darkModeEnable}>{btnText}</button>
+                <button type='button' className='cool-btn4' 
+                onClick={darkModeEnable}>{btnText}</button>
         </div>
     </div>
    )
